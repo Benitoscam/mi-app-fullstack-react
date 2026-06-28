@@ -1,0 +1,55 @@
+/* Estilos adicionales para complementar Bootstrap */
+
+/* Avatar circular */
+.avatar-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Efecto hover en tarjetas */
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ✅ Animación de entrada */
+.card-transition {
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Asegurar que el texto esté alineado a la izquierda */
+.text-start {
+  text-align: left !important;
+}
+
+/* ✅ Forzar que el contenido de la tarjeta no se centre */
+.card-body {
+  text-align: left;
+}
+
+/* ✅ Asegurar que los íconos de Bootstrap Icons se muestren */
+.bi {
+  display: inline-block;
+}
